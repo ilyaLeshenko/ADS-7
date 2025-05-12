@@ -18,7 +18,7 @@ void Train::addCar(bool light) {
   }
 }
 
-uint64_t Train::getLength() {
+int Train::getLength() {
   if (!first->light) {
     first->light = true;
   }
@@ -42,6 +42,6 @@ uint64_t Train::getLength() {
   }
 }
 
-uint64_t Train::getOpCount() {
+int Train::getOpCount() {
   return countOp;
 }
