@@ -3,7 +3,7 @@
 #include <random>
 #include <chrono>
 #include <string>
-#include "Train.h"
+#include "train.h"
 
 void printHeader() {
   std::cout << "N\t\tMode\t\tEterations\tTime\n";
