@@ -32,8 +32,6 @@ void runExperiment(int numCars, const std::string& mode) {
   auto end = std::chrono::high_resolution_clock::now();
 
   auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-  bool correct = (detected == numCars);
-
   std::cout << numCars << "\t\t" << mode << "\t\t"
     << train.getOpCount() << "\t\t"
     << duration << "\n";
