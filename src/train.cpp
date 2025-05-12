@@ -22,7 +22,7 @@ uint64_t Train::getLength() {
   if (!first->light) {
     first->light = true;
   }
-  int steps = 0;
+  int steps;
   Car* current = first;
   while (true) {
     steps = 0;
